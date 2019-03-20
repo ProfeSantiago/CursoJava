@@ -1,0 +1,11 @@
+Notas:
+
+Para poner a funcionarl el programa de ejemplo hay que ejecutar los siguientes pasos:
+
+En SQL Server 2012 se tiene que crear una Base de Datos llamada: Agenda_DB.
+
+Luego se tiene que abrir y correr el Archivo de Scripts llamado: Script_Agenda.sql
+
+Que esta en la carpeta:
+
+8) Bases de Datos

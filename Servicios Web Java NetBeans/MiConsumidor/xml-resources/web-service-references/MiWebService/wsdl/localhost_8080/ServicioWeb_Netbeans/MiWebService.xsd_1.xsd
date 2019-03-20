@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1 (branches/2.1-6728; 2011-02-03T14:14:58+0000) JAXWS-RI/2.2.3 JAXWS/2.2. --><xs:schema xmlns:tns="http://Paquete/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://Paquete/">
+
+<xs:element name="Suma" type="tns:Suma" />
+
+<xs:element name="SumaResponse" type="tns:SumaResponse" />
+
+<xs:complexType name="Suma">
+<xs:sequence>
+<xs:element name="Num1" type="xs:int" />
+<xs:element name="Num2" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="SumaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

@@ -1,0 +1,7 @@
+Notas:
+
+Para correrlo: Se tiene que adjuntar la Base de Datos a SQL Server 2000
+
+------------------------------------------------------------------------
+
+Para conectarse se debe crear un ODBC Llamado: NCapas_ODBC

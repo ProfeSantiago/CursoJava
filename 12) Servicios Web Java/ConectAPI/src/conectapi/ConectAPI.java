@@ -49,8 +49,16 @@ public class ConectAPI {
 
     public static void main(String[] args) throws IOException, JSONException {
         JSONObject json = readJsonFromUrl("https://jsonip.com");
-        System.out.println(json.toString());
+        System.out.println(json.toString()); //Esta línea es Opcional
         System.out.println(json.get("ip"));
     }
+    
+/** *******************************************************************************
+ * Otra Nota: Para prácticas pueden basarse en los siguientes ejemplos:
+ 
+ JavaScript\2) JQuery\Ajax\1) Ajax JQuery IPWebAPI.htm
+ JavaScript\2) JQuery\Ajax\2.1) Ajax JQuery IPWebAPI Doble.html 
+ JavaScript\2) JQuery\Ajax\3) Ajax JQuery Paises.html
+ ******************************************************************************** */
 
 }

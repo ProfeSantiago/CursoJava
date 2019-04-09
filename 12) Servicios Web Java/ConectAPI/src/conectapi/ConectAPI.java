@@ -27,30 +27,30 @@ import org.json.JSONObject;
 public class ConectAPI {
 
     private static String readAll(Reader rd) throws IOException {
-        StringBuilder sb = new StringBuilder();
+        StringBuilder constructorTexto = new StringBuilder();
         int cp;
         while ((cp = rd.read()) != -1) {
-            sb.append((char) cp);
+            constructorTexto.append((char) cp);
         }
-        return sb.toString();
+        return constructorTexto.toString();
     }
 
     public static JSONObject readJsonFromUrl(String url) throws IOException, JSONException {
-        InputStream is = new URL(url).openStream();
+        InputStream flujoEntrada = new URL(url).openStream();
         try {
-            BufferedReader rd = new BufferedReader(new InputStreamReader(is, Charset.forName("UTF-8")));
+            BufferedReader rd = new BufferedReader(new InputStreamReader(flujoEntrada, Charset.forName("UTF-8")));
             String jsonText = readAll(rd);
             JSONObject json = new JSONObject(jsonText);
             return json;
         } finally {
-            is.close();
+            flujoEntrada.close();
         }
     }
 
     public static void main(String[] args) throws IOException, JSONException {
-        JSONObject json = readJsonFromUrl("https://jsonip.com");
-        System.out.println(json.toString()); //Esta línea es Opcional
-        System.out.println(json.get("ip"));
+        JSONObject elJson = readJsonFromUrl("https://jsonip.com");
+        System.out.println(elJson.toString()); //Esta línea es Opcional
+        System.out.println(elJson.get("ip"));
     }
     
 /** *******************************************************************************
@@ -59,6 +59,6 @@ public class ConectAPI {
  JavaScript\2) JQuery\Ajax\1) Ajax JQuery IPWebAPI.htm
  JavaScript\2) JQuery\Ajax\2.1) Ajax JQuery IPWebAPI Doble.html 
  JavaScript\2) JQuery\Ajax\3) Ajax JQuery Paises.html
- ******************************************************************************** */
+ *********************************************************************************/
 
 }

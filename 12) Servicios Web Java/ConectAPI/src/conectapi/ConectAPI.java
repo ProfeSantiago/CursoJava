@@ -59,6 +59,9 @@ public class ConectAPI {
  JavaScript\2) JQuery\Ajax\1) Ajax JQuery IPWebAPI.htm
  JavaScript\2) JQuery\Ajax\2.1) Ajax JQuery IPWebAPI Doble.html 
  JavaScript\2) JQuery\Ajax\3) Ajax JQuery Paises.html
+  
+ Para las Pilas o colas del proyecto debe usar el siguiente Api:
+ https://randomuser.me/api/
  *********************************************************************************/
 
 }

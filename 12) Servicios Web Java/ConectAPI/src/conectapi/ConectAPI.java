@@ -52,6 +52,11 @@ public class ConectAPI {
         JSONObject elJson = readJsonFromUrl("https://jsonip.com");
         System.out.println(elJson.toString()); //Esta línea es Opcional
         System.out.println(elJson.get("ip"));
+        
+        //-------------------------------------------------------------------
+        // Copie y pegue las 3 líneas anteriores e intentelo con este otro Api:
+        // http://ip-api.com/json
+        // (Ojo: Agregue también la latitud y la longitud)
     
         //-------------------------------------------------------------------
         JSONObject miJson = readJsonFromUrl("https://randomuser.me/api/");
@@ -63,6 +68,14 @@ public class ConectAPI {
             System.out.println(aunOtroJson.get("first"));
             System.out.println(aunOtroJson.get("last"));
         }
+         
+        //-------------------------------------------------------------------
+        // Basados en el ejemplo anterior ahora intentelo con este otro Api:
+        // https://hn.algolia.com/api/v1/search?query=
+        
+        //-------------------------------------------------------------------
+        // Ahora, simplifique un poco la estructura anterior y use este Api:
+        // https://restcountries.eu/rest/v2/all
     }
     
 /** *******************************************************************************
@@ -72,8 +85,6 @@ public class ConectAPI {
  JavaScript\2) JQuery\Ajax\2.1) Ajax JQuery IPWebAPI Doble.html 
  JavaScript\2) JQuery\Ajax\3) Ajax JQuery Paises.html
   
- Para las Pilas o colas del proyecto debe usar el siguiente Api:
- https://randomuser.me/api/
  *********************************************************************************/
 
 }

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h1>Sumas JSF</h1>
+         <h:form>
+         <div>
+           <h:outputLabel value="Numero 1: "/>
+           <h:inputText value="#{mifrijolito.numero1}"/>
+         </div>
+         <div>
+           <h:outputLabel value="Numero 2: "/>
+           <h:inputText value="#{mifrijolito.numero2}"/>
+         </div>
+         <div>
+           <h:commandButton value="Sumar"
+                            action="#{mifrijolito.suma}"/>
+         </div>
+         <div>
+           <h:outputLabel value="Resultado: "/>
+           <h:outputText value="#{mifrijolito.resultado}"/>
+         </div>
+       </h:form>
+    </h:body>
+</html>
+

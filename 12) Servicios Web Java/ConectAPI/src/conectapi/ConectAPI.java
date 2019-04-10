@@ -23,6 +23,7 @@ import java.nio.charset.Charset;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.json.JSONArray;
 
 public class ConectAPI {
 
@@ -51,6 +52,17 @@ public class ConectAPI {
         JSONObject elJson = readJsonFromUrl("https://jsonip.com");
         System.out.println(elJson.toString()); //Esta línea es Opcional
         System.out.println(elJson.get("ip"));
+    
+        //-------------------------------------------------------------------
+        JSONObject miJson = readJsonFromUrl("https://randomuser.me/api/");
+        JSONArray resultados = miJson.getJSONArray("results");
+        
+         for (int i = 0; i < resultados.length(); i++) {
+            JSONObject elOtroJson = (JSONObject) resultados.get(i);
+            JSONObject aunOtroJson = (JSONObject) elOtroJson.get("name");
+            System.out.println(aunOtroJson.get("first"));
+            System.out.println(aunOtroJson.get("last"));
+        }
     }
     
 /** *******************************************************************************

@@ -2,7 +2,8 @@
 package paquetin;
 
 import javax.inject.Named;
-import javax.enterprise.context.RequestScoped;
+//import javax.enterprise.context.RequestScoped;
+import javax.faces.bean.RequestScoped;
 
 @Named(value = "mifrijolito")
 @RequestScoped
